@@ -1,9 +1,9 @@
 ---
 - name: Create IPython profile.
-  command: ipython profile create
+  command: ipython profile create nbserver
 
 - name: Start IPython notebook server.
-  command: ipython notebook
+  command: ipython notebook --profile=nbserver
 
 
 #- name: IPython -- Change IPython owner.
